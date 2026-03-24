@@ -69,8 +69,7 @@ simple-calculator/
 
 ## 🌐 Live Demo
 
-👉 https://yourusername.github.io/simple-calculator/
-
+👉 https://anjanajanardhanan-hub.github.io/calculator/
 
 ---
 
