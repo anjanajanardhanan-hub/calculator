@@ -1,4 +1,4 @@
-# 🧮 Advanced Calculator Web App
+# 🧮 Calculator
 
 A modern and interactive calculator built using **HTML, CSS, and JavaScript**.
 This project focuses on both **functionality and UI design**, providing a smooth experience similar to real-world calculators.
