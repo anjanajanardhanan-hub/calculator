@@ -1,0 +1,89 @@
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.calc-body {
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 15px 15px 30px rgba(0,0,0,0.4);
+    width: 320px;
+}
+
+/* Screen */
+.screen-container {
+    background: #9fa979; 
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: inset 5px 5px 15px rgba(0,0,0,0.5);
+    margin-bottom: 25px;
+    border: 2px solid #2a2a2a;
+}
+
+#display {
+    width: 100%;
+    background: transparent;
+    border: none;
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    outline: none;
+}
+
+/* Keypad */
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.key {
+    background: linear-gradient(145deg, #3a3a3a, #1a1a1a);
+    color: white;
+    border: none;
+    padding: 18px 0;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px #000, 
+                inset 1px 1px 2px rgba(255,255,255,0.1);
+    transition: all 0.1s;
+}
+
+.key:active {
+    box-shadow: inset 3px 3px 6px #000;
+    transform: translateY(2px);
+}
+
+/* Colors */
+.red { background: linear-gradient(145deg, #ff4d4d, #9e0000); }
+.blue { background: linear-gradient(145deg, #3b9fff, #0056a3); }
+
+/* Bottom Layout */
+.bottom-group {
+    grid-column: span 4;
+    display: flex;
+    gap: 12px;
+}
+
+.num-pad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    flex: 3;
+}
+
+.equal {
+    flex: 1;
+    height: auto;
+    border-radius: 12px;
+}

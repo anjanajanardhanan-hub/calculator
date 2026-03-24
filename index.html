@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weronz Tech - Simple Calculator</title>
+    
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calc-body">
+        <div class="screen-container">
+            <input type="text" id="display" readonly value="0">
+        </div>
+        
+        <div class="keypad">
+            <button class="key red" onclick="clearDisplay()">C</button>
+            <button class="key" onclick="backspace()">CE</button>
+            <button class="key" onclick="append('/')">/</button>
+            <button class="key" onclick="append('*')">*</button>
+            
+            <button class="key" onclick="append('7')">7</button>
+            <button class="key" onclick="append('8')">8</button>
+            <button class="key" onclick="append('9')">9</button>
+            <button class="key" onclick="append('-')">-</button>
+            
+            <button class="key" onclick="append('4')">4</button>
+            <button class="key" onclick="append('5')">5</button>
+            <button class="key" onclick="append('6')">6</button>
+            <button class="key" onclick="append('+')">+</button>
+            
+            <div class="bottom-group">
+                <div class="num-pad">
+                    <button class="key" onclick="append('1')">1</button>
+                    <button class="key" onclick="append('2')">2</button>
+                    <button class="key" onclick="append('3')">3</button>
+                    <button class="key" onclick="append('0')">0</button>
+                    <button class="key" onclick="append('00')">00</button>
+                    <button class="key" onclick="append('.')">.</button>
+                </div>
+                <button class="key blue equal" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
